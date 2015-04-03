@@ -7,7 +7,7 @@
 public class Reader extends Thread {
 	MyQueue q;
 		
-	/* Constructor 
+	/** Constructor 
 	 * @param qIn takes in the buffer
 	 */
 	public Reader(MyQueue qIn) {
@@ -18,13 +18,13 @@ public class Reader extends Thread {
 		@SuppressWarnings("unused")
 		int item;	// item to be read
 		while (true) {
-			// run indefinitely
+			/* run indefinitely */
 			try {
 				// read item from buffer
 				item = q.read();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-		} // while (true)
+		} /* while (true) */
 	}
 }

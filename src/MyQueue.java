@@ -10,7 +10,7 @@ public class MyQueue {
 	private int   filled;	// number of spots filled in buffer
 	private int   size;		// total size of buffer
 		
-	/* Constructor
+	/** Constructor
 	 * @param sizeIn passes in desired size of the queue buffer
 	 */
 	public MyQueue(int sizeIn) {
@@ -21,7 +21,7 @@ public class MyQueue {
 		size    = sizeIn;
 	}
 	
-	/*
+	/**
 	 * Writes to buffer
 	 * @param item is the item to be written
 	 */
@@ -37,7 +37,7 @@ public class MyQueue {
 		}
 	}
 	
-	/*
+	/**
 	 * Reads from buffer
 	 * @return the int that was read from buffer
 	 */

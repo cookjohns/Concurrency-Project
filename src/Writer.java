@@ -7,7 +7,7 @@
 public class Writer extends Thread {
 	MyQueue q;
 		
-	/* Constructor 
+	/** Constructor 
 	 * @param qIn takes in the buffer
 	 */
 	public Writer(MyQueue qIn) {
@@ -16,13 +16,13 @@ public class Writer extends Thread {
 		public void run() {
 		int item = 0;	// initialization for item to be written
 		while (true) {
-			// run indefinitely
+			/* run indefinitely */
 			try {
 				// write item to buffer
 				q.write(item++);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-		} // while (true)
+		} /* while (true) */
 	}
 }
